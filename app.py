@@ -11,6 +11,8 @@ import dash_table
 
 app = dash.Dash(__name__)
 
+server = app.server
+
 df = pd.read_csv('data/data1.csv') # data from: https://data.worldbank.org/indicator/SP.POP.TOTL
 
 countries = set(df['Country Name'])
